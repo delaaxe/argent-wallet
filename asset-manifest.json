@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/argent-wallet/static/css/main.db971b61.chunk.css",
-    "main.js": "/argent-wallet/static/js/main.39f1a3da.chunk.js",
-    "main.js.map": "/argent-wallet/static/js/main.39f1a3da.chunk.js.map",
+    "main.js": "/argent-wallet/static/js/main.92b41b40.chunk.js",
+    "main.js.map": "/argent-wallet/static/js/main.92b41b40.chunk.js.map",
     "runtime-main.js": "/argent-wallet/static/js/runtime-main.c6b9cf26.js",
     "runtime-main.js.map": "/argent-wallet/static/js/runtime-main.c6b9cf26.js.map",
     "static/js/2.6280d6e9.chunk.js": "/argent-wallet/static/js/2.6280d6e9.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c6b9cf26.js",
     "static/js/2.6280d6e9.chunk.js",
     "static/css/main.db971b61.chunk.css",
-    "static/js/main.39f1a3da.chunk.js"
+    "static/js/main.92b41b40.chunk.js"
   ]
 }
