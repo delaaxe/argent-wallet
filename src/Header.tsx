@@ -5,7 +5,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import InputBase from "@material-ui/core/InputBase";
 import SearchIcon from "@material-ui/icons/Search";
-import { useHistory, useLocation } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -71,20 +71,18 @@ const useStyles = makeStyles((theme) => ({
 export const Header = () => {
   const history = useHistory();
   const classes = useStyles();
-  const { pathname } = useLocation();
-  const address = pathname.slice(1);
-  const [name, setName] = React.useState(address);
+  const [name, setName] = React.useState<string>();
   const handleChange = ({ target }: React.ChangeEvent<HTMLInputElement>) =>
     setName(target.value);
 
   const handleSubmit = (e: React.MouseEvent<HTMLFormElement>) => {
     e.stopPropagation();
     e.preventDefault();
-    history.push(`/${name}`);
+    history.push(`/argent-wallet/${name}`);
   };
 
   return (
-    <div className={classes.grow}>
+    <header className={classes.grow}>
       <AppBar position="static">
         <Toolbar>
             <Typography className={classes.title} variant="h6" noWrap>
@@ -110,6 +108,6 @@ export const Header = () => {
           <div className={classes.grow} />
         </Toolbar>
       </AppBar>
-    </div>
+    </header>
   );
 };

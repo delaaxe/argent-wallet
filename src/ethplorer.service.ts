@@ -7,15 +7,21 @@ export const getERC20Balances = async (
 ): Promise<Record<string, string>> => {
   const params = new URLSearchParams({ apiKey: "freekey" });
   const url = `${apiUrl}/getAddressInfo/${address}?${params}`;
+
   const response = await fetch(url);
+  if (response.status === 429) {
+    throw new Error("Hit Ethplorer free rate limit, please try again later");
+  }
+
   const result = await response.json();
   if (!result?.tokens) {
     throw new Error("Cannot find ERC20 token balances");
   }
+
   const balances = result.tokens.map(({ balance, tokenInfo }: any) => [
     tokenInfo.symbol,
     web3.utils.fromWei(balance.toString()),
   ]);
-  console.log("erc20", balances);
+
   return Object.fromEntries(balances);
 };

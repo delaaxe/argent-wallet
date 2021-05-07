@@ -10,17 +10,17 @@ import "./App.css";
 export const App = () => (
   <Router>
     <div className="App">
-          <Header />
-      <header className="App-header">
+      <Header />
+      <main>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/argent-wallet">
             <p>Please search for a wallet</p>
           </Route>
-          <Route path="/:address">
+          <Route path="/argent-wallet/:address">
             <Wallet />
           </Route>
         </Switch>
-      </header>
+      </main>
     </div>
   </Router>
 );
