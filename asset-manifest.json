@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/argent-wallet/static/css/main.db971b61.chunk.css",
+    "main.js": "/argent-wallet/static/js/main.abddf5a4.chunk.js",
+    "main.js.map": "/argent-wallet/static/js/main.abddf5a4.chunk.js.map",
+    "runtime-main.js": "/argent-wallet/static/js/runtime-main.c6b9cf26.js",
+    "runtime-main.js.map": "/argent-wallet/static/js/runtime-main.c6b9cf26.js.map",
+    "static/js/2.6280d6e9.chunk.js": "/argent-wallet/static/js/2.6280d6e9.chunk.js",
+    "static/js/2.6280d6e9.chunk.js.map": "/argent-wallet/static/js/2.6280d6e9.chunk.js.map",
+    "static/js/3.e221b408.chunk.js": "/argent-wallet/static/js/3.e221b408.chunk.js",
+    "static/js/3.e221b408.chunk.js.map": "/argent-wallet/static/js/3.e221b408.chunk.js.map",
+    "index.html": "/argent-wallet/index.html",
+    "static/css/main.db971b61.chunk.css.map": "/argent-wallet/static/css/main.db971b61.chunk.css.map",
+    "static/js/2.6280d6e9.chunk.js.LICENSE.txt": "/argent-wallet/static/js/2.6280d6e9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c6b9cf26.js",
+    "static/js/2.6280d6e9.chunk.js",
+    "static/css/main.db971b61.chunk.css",
+    "static/js/main.abddf5a4.chunk.js"
+  ]
+}
